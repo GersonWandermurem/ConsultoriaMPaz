@@ -31,6 +31,18 @@
         .click-text {
             font-size: 14px; /* Diminuindo o tamanho do texto */
         }
+
+        /* Estilo para as empresas com fonte 12 */
+        .empresas-list li {
+            font-size: 12px;
+            counter-increment: lista-counter; /* Incrementar o contador para a lista */
+            margin-bottom: 5px; /* Espaçamento entre as empresas */
+        }
+
+        /* Estilo para o número da empresa */
+        .empresas-list li:before {
+            content: counter(lista-counter) ". "; /* Inserir o número da empresa */
+        }
     </style>
 </head>
 
