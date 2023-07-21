@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memorize o Link</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+        .link-text {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px #00ff00; /* Adicionando sombreamento verde */
+        }
+
+        .empresas-list {
+            font-size: 10px;
+        }
+
+        .empresa-rect {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 18px;
+            width: 300px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .click-text {
+            font-size: 14px; /* Diminuindo o tamanho do texto */
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-family: Calibri, sans-serif;">
+        <a class="link-text" href="https://app.powerbi.com/view?r=eyJrIjoiNGViNzU4N2ItNjAyOC00NzRlLTgxZDEtY2I3MzM4N2EwMTUzIiwidCI6IjQwOWYwMjQxLWRkODQtNDExNS1iZDZjLWE2MmRhYzg0NGQxMCJ9&pageName=ReportSectione6c7e0986f073faaec0b" target="_blank">
+            Empresas A
+        </a>
+    </h2>
+    <hr>
+    <div style="float: left; width: 40%;">
+        <h3>Empresas Relacionadas:</h3>
+        <ul class="empresas-list">
+            <li>BABY STORE</li>
+            <li>BARBER CLUB JR</li>
+            <li>CELEST HAIR</li>
+            <li>ESPAÇO ANY</li>
+            <li>ESPAÇO AS</li>
+            <li>FELIPE CAR</li>
+            <li>MONIQUE FORTUNATO</li>
+            <li>STUDIO ERIKA CUNHA</li>
+            <li>STUDIO PEROLLA</li>
+            <li>STUDIO TAMIRES E GLEICE</li>
+            <li>KANANDA CÂNDIDO</li>
+            <li>ESPAÇO MAYARA</li>
+            <li>JAQUELYNE SILVA HAIR</li>
+            <li>DANIELLE CASTRO</li>
+            <li>ESPAÇO DAS PRETAS</li>
+            <li>STELA</li>
+            <li>TRATO DAS TRANÇAS</li>
+        </ul>
+    </div>
+</body>
+
+</html>
