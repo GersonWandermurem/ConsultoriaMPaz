@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Empresas_MPaz</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-image: url('https://gersonwandermurem.github.io/ConsultoriaMPaz/Logo_MPAZ.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 600px; /* Aumente o tamanho desejado da imagem aqui */
+            background-attachment: fixed;
+        }
+
+        .link-text {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px #EB455F; /* Adicionando sombreamento na cor #EB455F */
+            color: #EB455F; /* Alterando a cor da fonte para #EB455F */
+        }
+
+        .empresas-list {
+            font-size: 12px;
+            counter-reset: lista-counter; /* Zerar o contador para a lista */
+            margin-bottom: 5px; /* Espaçamento entre as empresas */
+            list-style-type: none; /* Remover os marcadores da lista */
+            padding-left: 0; /* Remover o espaçamento padrão à esquerda */
+        }
+
+        /* Estilo para o número da empresa na lista */
+        .empresas-list li {
+            counter-increment: lista-counter; /* Incrementar o contador para a lista */
+            margin-bottom: 5px; /* Espaçamento entre as empresas */
+        }
+
+        /* Estilo para o número da empresa na lista */
+        .empresas-list li:before {
+            content: counter(lista-counter) "."; /* Inserir o número da empresa com ponto */
+            margin-right: 5px; /* Adicionar espaço entre o número e o nome da empresa */
+        }
+
+        /* Estilo para o contêiner pai que irá alinhar os grupos A e B lado a lado */
+        .groups-container {
+            display: flex; /* Utilizar flexbox para alinhar os grupos lado a lado */
+        }
+
+        /* Estilo para cada grupo */
+        .group-container {
+            margin-right: 142px; /* Adicionar espaçamento horizontal de 142 pixels entre os grupos */
+            text-align: left; /* Alinhar o texto das empresas à esquerda */
+        }
+
+        /* Estilo para o contêiner do Grupo A */
+        .group-a-container {
+            margin-left: 5cm; /* Adicionar 5 cm de margem à esquerda para deslocar para a direita */
+        }
+
+        /* Estilo para o cabeçalho do Grupo A */
+        .group-a-header {
+            text-align: center; /* Centralizar o texto */
+            font-family: Calibri, sans-serif;
+            margin-bottom: 10px; /* Adicionar espaçamento embaixo do texto */
+            color: #EB455F; /* Alterando a cor da fonte para #EB455F */
+        }
+
+        /* Estilo para o contêiner do Grupo B */
+        .group-b-container {
+            margin-left: 2cm; /* Remover 5 cm de margem à esquerda para deslocar para a esquerda */
+        }
+
+        /* Estilo para o cabeçalho do Grupo B */
+        .group-b-header {
+            text-align: center; /* Centralizar o texto */
+            font-family: Calibri, sans-serif;
+            margin-bottom: 10px; /* Adicionar espaçamento embaixo do texto */
+            color: #03A6CE; /* Alterando a cor da fonte para #03A6CE */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="groups-container">
+        <div class="group-container group-a-container">
+            <h2 class="group-a-header">
+                <a class="link-text" href="https://app.powerbi.com/view?r=eyJrIjoiZjliNTRiZTMtNmVmNS00ZDAzLTgxM2MtM2JiNmJiOGE2MWI3IiwidCI6IjQwOWYwMjQxLWRkODQtNDExNS1iZDZjLWE2MmRhYzg0NGQxMCJ9&pageName=ReportSectione6c7e0986f073faaec0b" target="_blank">
+                    Empresas do Grupo A
+                </a>
+            </h2>
+            <ul class="empresas-list">
+                <li>BARBER CLUB JR</li>
+                <li>CELEST HAIR</li>
+                <li>DANIELLE CASTRO</li>
+                <li>ESPAÇO AS</li>
+                <li>ESPAÇO DAS PRETAS</li>
+                <li>ESPAÇO MAYARA</li>
+                <li>FELIPE CAR</li>
+                <li>JAQUELYNE SILVA HAIR</li>
+                <li>KANANDA CÂNDIDO</li>
+                <li>MONIQUE FORTUNATO</li>
+                <li>STELA</li>
+                <li>STUDIO ERIKA CUNHA</li>
+                <li>STUDIO PEROLLA</li>
+                <li>STUDIO TAMIRES E GLEICE</li>
+            </ul>
+        </div>
+        <div class="group-container group-b-container">
+            <h2 class="group-b-header">
+                <a class="link-text" href="https://app.powerbi.com/view?r=eyJrIjoiNDgzMTI3YTYtMDJkZC00MTU5LTljNzAtZGM1MWU3NGU0OWJiIiwidCI6IjQwOWYwMjQxLWRkODQtNDExNS1iZDZjLWE2MmRhYzg0NGQxMCJ9&pageName=ReportSectione6c7e0986f073faaec0b" target="_blank">
+                    Empresas do Grupo B
+                </a>
+            </h2>
+            <ul class="empresas-list">
+                <li>ALESSANDRA BORSODI</li>
+                <li>BABY STORY</li>
+                <li>CHEIRINHO BOM</li>
+                <li>HAMBURGUER KING</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
