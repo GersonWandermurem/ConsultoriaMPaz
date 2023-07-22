@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Empresas_MPaz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #f8f8f8; /* Alterando a cor de fundo */
+        }
+
+        .link-text {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px #EB455F; /* Adicionando sombreamento na cor #EB455F */
+            color: #EB455F; /* Alterando a cor da fonte para #EB455F */
+        }
+
+        .empresas-list {
+            font-size: 12px;
+            counter-reset: lista-counter; /* Zerar o contador para a lista */
+            margin-bottom: 5px; /* Espaçamento entre as empresas */
+            list-style-type: none; /* Remover os marcadores da lista */
+            padding-left: 0; /* Remover o espaçamento padrão à esquerda */
+        }
+
+        /* Estilo para o número da empresa na lista */
+        .empresas-list li {
+            counter-increment: lista-counter; /* Incrementar o contador para a lista */
+            margin-bottom: 5px; /* Espaçamento entre as empresas */
+        }
+
+        /* Estilo para o número da empresa na lista */
+        .empresas-list li:before {
+            content: counter(lista-counter) "."; /* Inserir o número da empresa com ponto */
+            margin-right: 5px; /* Adicionar espaço entre o número e o nome da empresa */
+        }
+
+        /* Estilo para o contêiner pai que irá alinhar os grupos A e B lado a lado */
+        .groups-container {
+            display: flex; /* Utilizar flexbox para alinhar os grupos lado a lado */
+            flex-wrap: wrap; /* Quebrar os grupos para a próxima linha em dispositivos móveis */
+            justify-content: center; /* Centralizar os grupos em dispositivos móveis */
+        }
+
+        /* Estilo para cada grupo */
+        .group-container {
+            margin: 10px; /* Adicionar espaçamento entre os grupos */
+            text-align: center; /* Centralizar o texto das empresas */
+        }
+
+        /* Estilo para o cabeçalho dos grupos */
+        .group-header {
+            font-size: 26px; /* Tamanho maior do cabeçalho */
+            font-family: Calibri, sans-serif;
+            margin-bottom: 10px; /* Adicionar espaçamento embaixo do texto */
+            color: #EB455F; /* Alterando a cor da fonte para #EB455F */
+        }
+
+        /* Estilo para o link das empresas */
+        .group-link {
+            font-size: 18px; /* Tamanho maior do link */
+        }
+
+        /* Estilo para a imagem no final da página */
+        .footer-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 600px; /* Ajuste o tamanho desejado para a imagem aqui */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="groups-container">
+        <div class="group-container group-a-container">
+            <h2 class="group-header">
+                <a class="link-text group-link" href="https://app.powerbi.com/view?r=eyJrIjoiZjliNTRiZTMtNmVmNS00ZDAzLTgxM2MtM2JiNmJiOGE2MWI3IiwidCI6IjQwOWYwMjQxLWRkODQtNDExNS1iZDZjLWE2MmRhYzg0NGQxMCJ9&pageName=ReportSectione6c7e0986f073faaec0b" target="_blank" title="Ao clicar você será direcionado aos relatórios do Power BI das Empresas abaixo">
+                    Empresas do Grupo A
+                </a>
+            </h2>
+            <ul class="empresas-list">
+                <li>BARBER CLUB JR</li>
+                <li>CELEST HAIR</li>
+                <li>DANIELLE CASTRO</li>
+                <li>ESPAÇO AS</li>
+                <li>ESPAÇO DAS PRETAS</li>
+                <li>ESPAÇO MAYARA</li>
+                <li>FELIPE CAR</li>
+                <li>JAQUELYNE SILVA HAIR</li>
+                <li>KANANDA CÂNDIDO</li>
+                <li>MONIQUE FORTUNATO</li>
+                <li>STELA</li>
+                <li>STUDIO ERIKA CUNHA</li>
+                <li>STUDIO PEROLLA</li>
+                <li>STUDIO TAMIRES E GLEICE</li>
+            </ul>
+        </div>
+        <div class="group-container group-b-container">
+            <h2 class="group-header">
+                <a class="link-text group-link" href="https://app.powerbi.com/view?r=eyJrIjoiNDgzMTI3YTYtMDJkZC00MTU5LTljNzAtZGM1MWU3NGU0OWJiIiwidCI6IjQwOWYwMjQxLWRkODQtNDExNS1iZDZjLWE2MmRhYzg0NGQxMCJ9&pageName=ReportSectione6c7e0986f073faaec0b" target="_blank" title="Ao clicar você será direcionado aos relatórios do Power BI das Empresas abaixo">
+                    Empresas do Grupo B
+                </a>
+            </h2>
+            <ul class="empresas-list">
+                <li>ALESSANDRA BORSODI</li>
+                <li>BABY STORY</li>
+                <li>CHEIRINHO BOM</li>
+                <li>HAMBURGUER KING</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Imagem no final da página -->
+    <img class="footer-image" src="https://gersonwandermurem.github.io/ConsultoriaMPaz/Logo_MPAZ.png" alt="Logo MPaz">
+</body>
+
+</html>
